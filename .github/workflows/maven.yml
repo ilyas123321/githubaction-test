@@ -1,4 +1,4 @@
-name: Java CI with Maven + Docker
+name: Java CI with Maven + Docker for testing
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Set up JDK 17
+    - name: Set up JDK 17 
       uses: actions/setup-java@v4
       with:
         distribution: temurin
